@@ -1,0 +1,427 @@
+.nav {
+  background-color: #e3e4e5;
+  border: 1px solid #ddd;
+}
+
+.nav .nav-box {
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  width: 990px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav-box .city-choose {
+  display: flex;
+  cursor: pointer;
+  padding: 0 3px;
+}
+
+.nav .nav-box .nav-list {
+  display: flex;
+}
+
+.nav .nav-box .nav-list .text-box {
+  display: flex;
+}
+
+.nav .nav-box .nav-text {
+  color: #999;
+  font-size: 12px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.nav .nav-box .nav-text-red {
+  color: #f00;
+  font-size: 12px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.nav .nav-box .text-center {
+  color: #999;
+  font-size: 12px;
+  margin: 0 3px;
+}
+
+.head {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.head .head-box {
+  width: 990px;
+  height: 140px;
+  margin: 0 auto;
+  position: relative;
+  /* 防止子元素设置的margin-top影响到父元素 */
+  overflow: hidden;
+}
+
+.head .head-box .logo-box {
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  margin: auto 0;
+  margin-top: 10px;
+  background-image: url(https://misc.360buyimg.com/mtd/pc/index_2019/1.0.1/assets/sprite/header/sprite.png);
+  cursor: pointer;
+}
+
+.head .head-box .search-box {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  /* 防止子元素设置的margin影响到父元素 */
+  overflow: hidden;
+}
+
+.head .head-box .search-box .search {
+  position: relative;
+  width: 486px;
+  height: 32px;
+  margin: 24px 25px 220px 280px;
+  border: 2px solid #e2231a;
+  display: flex;
+}
+
+.head .head-box .search-box .search .search-text {
+  padding: 2px 44px 2px 17px;
+  height: 26px;
+  width: 367px;
+  line-height: 26px;
+  font-size: 12px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.head .head-box .search-box .search .photo-search {
+  position: absolute;
+  right: 72px;
+  top: 8px;
+}
+
+.head .head-box .search-box .search #search-button {
+  background-color: #e1251b;
+  width: 58px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.head .head-box #shopping-car-box {
+  position: absolute;
+  width: 130px;
+  height: 34px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  right: 70px;
+  top: 24px;
+  display: flex;
+  justify-content: center;
+  line-height: 34px;
+  cursor: pointer;
+}
+
+.head .head-box #shopping-car-box #car-text {
+  font-size: 12px;
+  color: #e1251b;
+  margin-left: 10px;
+  font-weight: 530;
+}
+
+.head .head-box .hot-words {
+  height: 20px;
+  width: 450px;
+  line-height: 20px;
+  position: absolute;
+  left: 280px;
+  display: flex;
+  margin-top: 5px;
+}
+
+.head .head-box .hot-words #hot-words-text-red {
+  color: #f00;
+  font-size: 12px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.head .head-box .hot-words .hot-words-text {
+  color: #999;
+  font-size: 12px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.head .head-box .nav-items {
+  position: absolute;
+  left: 263px;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  padding-top: 20px;
+  width: 760px;
+  display: flex;
+}
+
+.head .head-box .nav-items .nav-item-text {
+  font-size: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.body {
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.body .content1 {
+  width: 990px;
+  height: 480px;
+  margin: 10px auto;
+  display: flex;
+}
+
+.body .content1 .content1-left {
+  width: 190px;
+  height: 100%;
+  background-color: #fefefe;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.body .content1 .content1-left .class-item-box {
+  padding: 10px 0;
+}
+
+.body .content1 .content1-left .class-item-box .class-item {
+  padding-left: 18px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.body .content1 .content1-left .class-item-box .class-item .class-item-text {
+  cursor: pointer;
+}
+
+.body .content1 .content1-mid {
+  width: 590px;
+  height: 100%;
+  background-color: #fefefe;
+  margin-right: 10px;
+}
+.body .content1 .content1-right {
+  width: 190px;
+  height: 100%;
+  background-color: #fefefe;
+}
+
+.body .content1 .content1-right .login {
+  height: 35px;
+  padding-top: 67px;
+  background-color: #fff;
+  position: relative;
+  /* 设置底部border的渐变色 */
+  border-bottom: 1px solid;
+  border-image: linear-gradient(270deg, white, #eeeeee, #eeeeee, white) 1 1 1 1;
+}
+
+.body .content1 .content1-right .login .login-user-head {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 5%);
+  overflow: hidden;
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  cursor: pointer;
+}
+
+.body .content1 .content1-right .login .login-user-head img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.body .content1 .content1-right .login .login-user {
+  position: absolute;
+  top: 16px;
+  left: 74px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.body .content1 .content1-right .login .login-user .hello-text {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.body .content1 .content1-right .login .login-user .login-text {
+  color: #333;
+}
+
+.body .content1 .content1-right .login .login-user .login-user-text {
+  cursor: pointer;
+}
+
+.body .content1 .content1-right .login .login-bottom {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.body .content1 .content1-right .login .login-bottom .user-gift {
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 13px;
+  background: #e1251b;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.body .content1 .content1-right .login .login-bottom .user-plus {
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #e5d790;
+  border-radius: 13px;
+  background: #363634;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.body .content1 .content1-right .news {
+  height: 130px;
+  width: 100%;
+  /* 设置底部border的渐变色 */
+  border-bottom: 1px solid;
+  border-image: linear-gradient(270deg, white, #eeeeee, #eeeeee, white) 1 1 1 1;
+}
+
+.body .content1 .content1-right .news .news-title {
+  height: 20px;
+  padding: 10px 0 0;
+  line-height: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body .content1 .content1-right .news .news-title .news-title-text {
+  font-size: 14px;
+  margin-left: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.body .content1 .content1-right .news .news-title #news-title-more-box {
+  display: flex;
+  font-size: 12px;
+  color: #999;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.body .content1 .content1-right .news .news-list {
+  height: 88px;
+  margin: 0 15px;
+}
+
+.body .content1 .content1-right .news .news-list .news-list-item {
+  height: 16px;
+  line-height: 16px;
+  color: #999;
+  margin-bottom: 6px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.body
+  .content1
+  .content1-right
+  .news
+  .news-list
+  .news-list-item
+  .news-list-item-tag {
+  display: inline-block;
+  height: 16px;
+  width: 35px;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #e1251b;
+  background-color: rgba(225, 37, 27, 0.08);
+  margin-right: 6px;
+}
+
+.body .content1 .content1-right .services {
+  height: 238px;
+  padding: 5px 0.5px;
+  /* background-color: #999; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.body .content1 .content1-right .services .services-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.body .content1 .content1-right .services .services-row .service-item {
+  cursor: pointer;
+  color: #333;
+  width: 63px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body
+  .content1
+  .content1-right
+  .services
+  .services-row
+  .service-item
+  .service-item-icon {
+  /* iconfont的大小通过font-size来调整 */
+  font-size: 25px;
+}
+
+.body
+  .content1
+  .content1-right
+  .services
+  .services-row
+  .service-item
+  .service-item-text {
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+}
+
+.others {
+  background-color: #f4f4f4;
+  height: 500px;
+}

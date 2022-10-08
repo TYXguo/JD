@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿京东</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <!-- 导入阿里巴巴iconfont库 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3688043_2mkg7o4inpy.css">
+    </head>
+<body>
+    <!-- 顶部导航条 -->
+    <div class="nav">
+        <div class="nav-box">
+            <!-- 城市选择 -->
+            <div class="city-choose nav-popper">
+                <i class="iconfont icon-location"></i>
+                <p class="nav-text">上海</p>
+            </div>
+            <!-- 导航列表 -->
+            <div class="nav-list">
+                <div class="nav-text">你好，请登录</div>
+                <div class="nav-text-red">免费注册</div>
+                <div class="text-center">|</div>
+                <div class="nav-text">我的订单</div>
+                <div class="text-center">|</div>
+                <div class="text-box popper">
+                    <div class="nav-text">我的京东</div>
+                    <i class="iconfont icon-xiala"></i>
+                </div>
+                <div class="text-center">|</div>
+                <div class="nav-text">京东会员</div>
+                <div class="text-center">|</div>
+                <div class="text-box nav-popper">
+                    <div class="nav-text-red">企业采购</div>
+                    <i class="iconfont icon-xiala"></i>
+                </div>
+                <div class="text-center">|</div>
+                <div class="text-box nav-popper">
+                    <div class="nav-text">商家服务</div>
+                    <i class="iconfont icon-xiala"></i>
+                </div>
+                <div class="text-center">|</div>
+                <div class="text-box nav-popper">
+                    <div class="nav-text">网站导航</div>
+                    <i class="iconfont icon-xiala"></i>
+                </div>
+                <div class="text-center">|</div>
+                <div class="nav-text">手机京东</div>
+                <div class="text-center">|</div>
+                <div class="nav-text">网站无障碍</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 头部搜索栏 -->
+    <div class="head">
+        <div class="head-box">
+            <!-- 京东logo -->
+            <div class="logo-box" id="logo"></div>
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <div class="search">
+                    <input class="search-text" placeholder="金龙鱼 调和油"/>
+                    <i class="iconfont icon-camera photo-search"></i>
+                    <div id="search-button">
+                        <i class="iconfont icon-search"></i>
+                    </div>
+                </div>
+                <!-- 购物车按钮 -->
+                <div id="shopping-car-box">
+                    <i class="iconfont icon-shopping-car"></i>
+                    <div id="car-text">我的购物车</div>
+                </div>
+            </div>
+            <!-- 热搜词 -->
+            <div class="hot-words">
+                <div id="hot-words-text-red">手机超值购</div>
+                <div class="hot-words-text">电脑数码</div>
+                <div class="hot-words-text">京东京造</div>
+                <div class="hot-words-text">热卖潮品</div>
+                <div class="hot-words-text">iPhone14</div>
+                <div class="hot-words-text">电脑万店</div>
+                <div class="hot-words-text">OPPO K9x</div>
+            </div>
+            <!-- 头部导航条 -->
+            <div class="nav-items">
+                <div class="nav-item-text">京东五金城</div>
+                <div class="nav-item-text">京东超市</div>
+                <div class="nav-item-text">秒杀</div>
+                <div class="nav-item-text">京东家电</div>
+                <div class="nav-item-text">京东生鲜</div>
+                <div class="nav-item-text">优惠券</div>
+                <div class="nav-item-text">PLUS会员</div>
+                <div class="nav-item-text">拍卖</div>
+                <div class="nav-item-text">品牌闪购</div>
+                <div class="nav-item-text">京东云</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间内容区 -->
+    <div class="body">
+        <div class="content1">
+            <!-- 左边栏 -->
+            <div class="content1-left">
+                <div class="class-item-box">
+                    <div class="class-item">
+                        <span class="class-item-text">家用电器</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">手机</span>
+                        <span>/</span>
+                        <span class="class-item-text">运营商</span>
+                        <span>/</span>
+                        <span class="class-item-text">数码</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">电脑</span>
+                        <span>/</span>
+                        <span class="class-item-text">办公</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">家居</span>
+                        <span>/</span>
+                        <span class="class-item-text">家居</span>
+                        <span>/</span>
+                        <span class="class-item-text">家装</span>
+                        <span>/</span>
+                        <span class="class-item-text">厨具</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">男装</span>
+                        <span>/</span>
+                        <span class="class-item-text">女装</span>
+                        <span>/</span>
+                        <span class="class-item-text">童装</span>
+                        <span>/</span>
+                        <span class="class-item-text">内衣</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">美妆</span>
+                        <span>/</span>
+                        <span class="class-item-text">个护清洁</span>
+                        <span>/</span>
+                        <span class="class-item-text">宠物</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">女鞋</span>
+                        <span>/</span>
+                        <span class="class-item-text">箱包</span>
+                        <span>/</span>
+                        <span class="class-item-text">钟表</span>
+                        <span>/</span>
+                        <span class="class-item-text">珠宝</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">男鞋</span>
+                        <span>/</span>
+                        <span class="class-item-text">运动</span>
+                        <span>/</span>
+                        <span class="class-item-text">户外</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">房产</span>
+                        <span>/</span>
+                        <span class="class-item-text">汽车</span>
+                        <span>/</span>
+                        <span class="class-item-text">汽车用品</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">母婴</span>
+                        <span>/</span>
+                        <span class="class-item-text">玩具乐器</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">食品</span>
+                        <span>/</span>
+                        <span class="class-item-text">酒类</span>
+                        <span>/</span>
+                        <span class="class-item-text">生鲜</span>
+                        <span>/</span>
+                        <span class="class-item-text">特产</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">艺术</span>
+                        <span>/</span>
+                        <span class="class-item-text">礼品鲜花</span>
+                        <span>/</span>
+                        <span class="class-item-text">农资绿植</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">医药保健</span>
+                        <span>/</span>
+                        <span class="class-item-text">计生情趣</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">图书</span>
+                        <span>/</span>
+                        <span class="class-item-text">文娱</span>
+                        <span>/</span>
+                        <span class="class-item-text">教育</span>
+                        <span>/</span>
+                        <span class="class-item-text">电子书</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">机票</span>
+                        <span>/</span>
+                        <span class="class-item-text">酒店</span>
+                        <span>/</span>
+                        <span class="class-item-text">旅游</span>
+                        <span>/</span>
+                        <span class="class-item-text">生活</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">众筹</span>
+                        <span>/</span>
+                        <span class="class-item-text">白条</span>
+                        <span>/</span>
+                        <span class="class-item-text">保险</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">安装</span>
+                        <span>/</span>
+                        <span class="class-item-text">维修</span>
+                        <span>/</span>
+                        <span class="class-item-text">清洗</span>
+                        <span>/</span>
+                        <span class="class-item-text">二手</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-item-text">工业品</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 中间轮播图 -->
+            <div class="content1-mid"></div>
+            <!-- 右边栏 -->
+            <div class="content1-right">
+                <!-- 用户登录 -->
+                <div class="login">
+                    <div class="login-user-head">
+                        <img src="data:image/png;base64,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">
+                    </div>
+                    <div class="login-user">
+                        <div class="login-user-text hello-text">Hi~欢迎逛京东</div>
+                        <div class="login-text">
+                           <span class="login-user-text">登录</span> 
+                           <span>|</span> 
+                           <span class="login-user-text">注册</span> 
+                        </div>
+                    </div>
+                    <div class="login-bottom">
+                        <div class="user-gift user-button">新人福利</div>
+                        <div class="user-plus user-button">PLUS会员</div>
+                    </div>
+                </div>
+                <!-- 京东快报 -->
+                <div class="news">
+                    <div class="news-title">
+                        <div class="news-title-text">京东快报</div>
+                        <div id="news-title-more-box">
+                            <div id="news-title-more">更多</div>
+                            <i class="iconfont icon-arrow-right news-title-more-icon"></i>
+                        </div>
+                    </div>
+                    <div class="news-list">
+                        <div class="news-list-item">
+                            <div class="news-list-item-tag">热议</div>
+                            锻炼宝宝的手眼协调能力，我有都乐蓝莓。
+                        </div>
+                        <div class="news-list-item">
+                            <div class="news-list-item-tag">最新</div>
+                            水莲花大闸蟹，蟹黄丰满，肉嫩鲜美！
+                        </div>
+                        <div class="news-list-item">
+                            <div class="news-list-item-tag">最新</div>
+                            小体积有大容量！家用冰箱就要这么选～
+                        </div>
+                        <div class="news-list-item">
+                            <div class="news-list-item-tag">热议</div>
+                            低热量的水果，好吃解馋不怕胖！
+                        </div>
+                    </div>
+                </div>
+                <!-- 各种服务 -->
+                <div class="services">
+                    <div class="services-row">
+                        <div class="service-item">
+                            <i class="iconfont icon-gift-card-origin service-item-icon"></i>
+                            <div class="service-item-text">礼品卡</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-company-origin service-item-icon"></i>
+                            <div class="service-item-text">企业购</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-phone-origin service-item-icon"></i>
+                            <div class="service-item-text">话费</div>
+                        </div>
+                    </div>
+                    <div class="services-row">
+                        <div class="service-item">
+                            <i class="iconfont icon-add-oil-origin service-item-icon"></i>
+                            <div class="service-item-text">加油卡</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-game-origin service-item-icon"></i>
+                            <div class="service-item-text">游戏</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-airplane-origin service-item-icon"></i>
+                            <div class="service-item-text">机票</div>
+                        </div>
+                    </div>
+                    <div class="services-row">
+                        <div class="service-item">
+                            <i class="iconfont icon-white-paper-origin service-item-icon"></i>
+                            <div class="service-item-text">白条</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-people-help-origin service-item-icon"></i>
+                            <div class="service-item-text">众筹</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-tool-origin service-item-icon"></i>
+                            <div class="service-item-text">五金城</div>
+                        </div>
+                    </div>
+                    <div class="services-row">
+                        <div class="service-item">
+                            <i class="iconfont icon-train-origin service-item-icon"></i>
+                            <div class="service-item-text">火车票</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-hotel-origin service-item-icon"></i>
+                            <div class="service-item-text">酒店</div>
+                        </div>
+                        <div class="service-item">
+                            <i class="iconfont icon-movie-origin service-item-icon"></i>
+                            <div class="service-item-text">电影票</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="others"></div>
+    <!-- 因为要对上面的DOM进行操作，所以要放在DOM之后，不然会找不到对应的DOM -->
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
