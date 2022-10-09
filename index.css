@@ -216,7 +216,73 @@
   height: 100%;
   background-color: #fefefe;
   margin-right: 10px;
+  position: relative;
+  overflow: hidden;
 }
+
+.body .content1 .content1-mid #photo-button-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  width: 25px;
+  height: 35px;
+  line-height: 35px;
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+}
+
+.body .content1 .content1-mid #photo-button-left i {
+  margin-right: 5px;
+}
+
+.body .content1 .content1-mid #photo-box {
+  display: flex;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.body .content1 .content1-mid #photo-button-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  width: 25px;
+  height: 35px;
+  line-height: 35px;
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+}
+
+.body .content1 .content1-mid #photo-button-right i {
+  margin-left: 5px;
+}
+
+.body .content1 .content1-mid .photo-index-list {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.body .content1 .content1-mid .photo-index-list .photo-index {
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+}
+
 .body .content1 .content1-right {
   width: 190px;
   height: 100%;

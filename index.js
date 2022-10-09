@@ -189,3 +189,85 @@ for (let i = 0; i < serviceItem.length; i++) {
     serviceItemIcon[i].setAttribute('class', carry)
   }
 }
+
+// 轮播图
+// 获取元素节点
+let preBtn = document.getElementById('photo-button-left')
+let nextBtn = document.getElementById('photo-button-right')
+let imgIndexBox = document.getElementsByClassName('photo-index-list')[0]
+let imgIndexList = document.getElementsByClassName('photo-index')
+let imgList = document.getElementById('photo-box')
+let imgBox = document.getElementsByClassName('content1-mid')[0]
+// 初始化当前显示的index和定时器
+let curIndex = 0,
+  timer
+// 默认index选中第一个圆圈
+imgIndexList[curIndex].style.backgroundColor = '#ffffff'
+imgIndexList[curIndex].style.border = '3px solid rgba(0,0,0,.1)'
+imgIndexList[curIndex].style.position = 'relative'
+imgIndexList[curIndex].style.top = '2px'
+imgIndexList[curIndex].style.left = '0'
+// 切换上一张
+function preFun() {
+  imgList.style.transition = '0.5s'
+  // 清空上一个index圆圈的样式
+  imgIndexList[curIndex].style.backgroundColor = 'rgba(255, 255, 255, 0.4)'
+  imgIndexList[curIndex].style.border = '1px solid rgba(0, 0, 0, 0.05)'
+  imgIndexList[curIndex].style.position = 'static'
+  if (curIndex == 0) {
+    imgList.style.transition = '0s'
+    curIndex = 7
+  } else {
+    curIndex--
+  }
+  imgList.style.left = `-${curIndex * 590}px`
+  imgIndexList[curIndex].style.backgroundColor = '#ffffff'
+  imgIndexList[curIndex].style.border = '3px solid rgba(0,0,0,.1)'
+  imgIndexList[curIndex].style.position = 'relative'
+}
+// 切换下一张
+function nextFun() {
+  imgList.style.transition = '0.5s'
+  // 清空上一个index圆圈的样式
+  imgIndexList[curIndex].style.backgroundColor = 'rgba(255, 255, 255, 0.4)'
+  imgIndexList[curIndex].style.border = '1px solid rgba(0, 0, 0, 0.05)'
+  imgIndexList[curIndex].style.position = 'static'
+  if (curIndex == 7) {
+    imgList.style.transition = '0s'
+    curIndex = 0
+  } else {
+    curIndex++
+  }
+  imgList.style.left = `-${curIndex * 590}px`
+  imgIndexList[curIndex].style.backgroundColor = '#ffffff'
+  imgIndexList[curIndex].style.border = '3px solid rgba(0,0,0,.1)'
+  imgIndexList[curIndex].style.position = 'relative'
+}
+// 自动循环播放
+function autoFun() {
+  timer = setInterval(nextFun, 2000)
+}
+// 关闭自动循环播放
+function stopAutoFun() {
+  clearInterval(timer)
+}
+// 点击index圆圈跳转图片
+function indexClick(index) {
+  imgList.style.transition = '0.5s'
+  // 清空上一个index圆圈的样式
+  imgIndexList[curIndex].style.backgroundColor = 'rgba(255, 255, 255, 0.4)'
+  imgIndexList[curIndex].style.border = '1px solid rgba(0, 0, 0, 0.05)'
+  imgIndexList[curIndex].style.position = 'static'
+  // 赋值新的index
+  curIndex = index
+  imgList.style.left = `-${curIndex * 590}px`
+  imgIndexList[curIndex].style.backgroundColor = '#ffffff'
+  imgIndexList[curIndex].style.border = '3px solid rgba(0,0,0,.1)'
+  imgIndexList[curIndex].style.position = 'relative'
+}
+// 添加事件
+autoFun()
+imgBox.addEventListener('mouseenter', stopAutoFun)
+imgBox.addEventListener('mouseleave', autoFun)
+preBtn.addEventListener('click', preFun)
+nextBtn.addEventListener('click', nextFun)
