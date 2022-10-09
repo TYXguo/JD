@@ -244,6 +244,14 @@
   position: absolute;
   left: 0;
   cursor: pointer;
+  width: 590px;
+  height: 480px;
+}
+
+.body .content1 .content1-mid #photo-box img {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .body .content1 .content1-mid #photo-button-right {
