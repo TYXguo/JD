@@ -251,6 +251,7 @@
 .body .content1 .content1-mid #photo-box img {
   width: 100%;
   width: 100%;
+  /* 让图片平铺满整个父元素 */
   object-fit: cover;
 }
 

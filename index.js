@@ -17,7 +17,7 @@ for (let i = 0; i < navText.length; i++) {
     this.style.color = '#e33232'
   }
   navText[i].onmouseout = function () {
-    this.style.color = '#f00'
+    this.style.color = '#999'
   }
 }
 let navTextRed = document.getElementsByClassName('nav-text-red')
